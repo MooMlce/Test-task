@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/*Task start*/
+.task{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    border: 1px solid black;
+}
+
+    /*Task figures start*/
+    .task__figures{
+        border-right: 1px solid black;
+        display: grid;
+        grid-template-rows: repeat(2, min-content);
+        text-align: center;
+        grid-gap: 20px;
+    }
+        .task__figures_title{
+            border-bottom: 1px solid black;
+            user-select: none;
+        }
+
+        /*Figure box start*/
+        .figures-box{
+            display: grid;
+            grid-gap: 10px;
+            justify-content: center;
+        }
+        .task__figures_circle{
+            border-radius: 100%;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+        }
+        .task__figures_square{
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            background-color: green;
+        }
+        /*Figure box end*/
+
+    /*Task figures end*/
+
+    /*Task canvas start*/
+    .task__canvas{
+        display: grid;
+        text-align: center;
+    }
+        .task__canvas_title{
+            border-bottom: 1px solid black;
+            user-select: none;
+        }
+    /*Task canvas end*/
+/*Task end*/
