@@ -84,6 +84,7 @@ document.addEventListener('mouseup', event => {
 document.addEventListener('keydown', function(event) {
     if (event.code === 'Delete') {
         removeFigureToCanvas();
+        saveCanvasToLS();
     }
 });
 
